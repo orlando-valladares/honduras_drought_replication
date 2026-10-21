@@ -54,6 +54,30 @@ maize_prices_2015_2026,price_index_january_100,Índice nominal con enero igual a
 maize_prices_2015_2026,commodity,Producto,Texto,Nacional,2015 y 2026,Archivo suministrado,Etiqueta,Vacio no permitido
 maize_prices_2015_2026,source_scope,Cobertura declarada,Texto,Nacional,2015 y 2026,Archivo suministrado,Etiqueta,Vacio no permitido
 maize_prices_2015_2026,currency_unit,Moneda y unidad,Texto,Nacional,2015 y 2026,Archivo suministrado,Etiqueta,Vacio no permitido
+maize_price_figure_a3,month,Mes calendario,Número,Nacional,2000-2026,Archivo suministrado,Clave mensual,Vacio no permitido
+maize_price_figure_a3,month_name_es,Nombre abreviado del mes,Texto,Nacional,2000-2026,Datos derivados,Etiqueta,Vacio no permitido
+maize_price_figure_a3,reference_median,Mediana de variación acumulada entre años de referencia,Porcentaje,Nacional-mes,Años seleccionados,Archivo suministrado y CHIRPS v3,Mediana de trayectorias normalizadas,Vacio no permitido
+maize_price_figure_a3,reference_p25,Percentil 25 de variación acumulada entre años de referencia,Porcentaje,Nacional-mes,Años seleccionados,Archivo suministrado y CHIRPS v3,Percentil de trayectorias normalizadas,Vacio no permitido
+maize_price_figure_a3,reference_p75,Percentil 75 de variación acumulada entre años de referencia,Porcentaje,Nacional-mes,Años seleccionados,Archivo suministrado y CHIRPS v3,Percentil de trayectorias normalizadas,Vacio no permitido
+maize_price_figure_a3,n_reference_years,Número de años de referencia,Conteo,Nacional-mes,Años seleccionados,Datos derivados,Conteo con igual peso,Vacio no permitido
+maize_price_figure_a3,pct_change_2015,Variación acumulada respecto a enero de 2015,Porcentaje,Nacional-mes,2015,Archivo suministrado,100 por precio/enero menos 100,Octubre ausente
+maize_price_figure_a3,pct_change_2026,Variación acumulada respecto a enero de 2026,Porcentaje,Nacional-mes,2026,Archivo suministrado,100 por precio/enero menos 100,Posterior a agosto ausente
+maize_price_figure_a3,price_hnl_per_tonne2015,Precio mayorista nominal de 2015,HNL por tonelada,Nacional-mes,2015,Archivo suministrado,Sin ajuste por inflación,Octubre ausente
+maize_price_figure_a3,price_hnl_per_tonne2026,Precio mayorista nominal de 2026,HNL por tonelada,Nacional-mes,2026,Archivo suministrado,Sin ajuste por inflación,Posterior a agosto ausente
+maize_price_normalized_monthly,year,Año,Año,Nacional,2000-2026,Archivo suministrado,Sin transformación,Vacio no permitido
+maize_price_normalized_monthly,month,Mes calendario,Número,Nacional,2000-2026,Archivo suministrado,Sin transformación,Vacio no permitido
+maize_price_normalized_monthly,series_role,Rol analítico del año,Texto,Nacional-año,2000-2026,Datos derivados,Focal referencia u otro,Vacio no permitido
+maize_price_normalized_monthly,selected_reference_year,Año incluido en referencia,Indicador,Nacional-año,2000-2026,Archivo suministrado y CHIRPS v3,z entre -1 y +1 más 12 meses válidos,Vacio no permitido
+maize_price_normalized_monthly,national_primera_z_loo,Puntaje CHIRPS nacional leave-one-out,Desviaciones estándar,Nacional-año,1981-2026,CHIRPS v3,Estandarización contra los otros 45 años,Vacio no permitido
+maize_price_normalized_monthly,price_hnl_per_tonne,Precio mayorista nominal,HNL por tonelada,Nacional-mes,2000-2026,Archivo suministrado,Sin ajuste por inflación,Ausencias originales conservadas
+maize_price_normalized_monthly,january_price_hnl_per_tonne,Precio nominal de enero del año,HNL por tonelada,Nacional-año,2000-2026,Archivo suministrado,Base anual,Puede faltar
+maize_price_normalized_monthly,cumulative_nominal_change_pct,Variación acumulada nominal respecto a enero,Porcentaje,Nacional-mes,2000-2026,Archivo suministrado,100 por precio/enero menos 100,Puede faltar
+maize_price_reference_selection,year,Año evaluado,Año,Nacional,2000-2026,Archivo suministrado y CHIRPS v3,Solapamiento,Vacio no permitido
+maize_price_reference_selection,national_primera_z_loo,Puntaje CHIRPS nacional leave-one-out,Desviaciones estándar,Nacional-año,2000-2026,CHIRPS v3,Estandarización contra los otros 45 años,Vacio no permitido
+maize_price_reference_selection,valid_price_months,Meses con precio válido,Conteo,Nacional-año,2000-2026,Archivo suministrado,Conteo,Vacio no permitido
+maize_price_reference_selection,complete_price_year,Año completo enero-diciembre,Indicador,Nacional-año,2000-2026,Archivo suministrado,12 meses válidos,Vacio no permitido
+maize_price_reference_selection,selected_reference_year,Año incluido en referencia,Indicador,Nacional-año,2000-2026,Archivo suministrado y CHIRPS v3,z entre -1 y +1 más año completo,Vacio no permitido
+maize_price_reference_selection,eligibility_status,Motivo de inclusión o exclusión,Texto,Nacional-año,2000-2026,Datos derivados,Regla documentada,Vacio no permitido
 oxfam_department_summary_2026,department,Departamento hondureño de la muestra,Texto,Departamento,2026,Oxfam,Sin transformación,Vacio no permitido
 oxfam_department_summary_2026,focus_groups,Grupos focales,Conteo,Departamento,2026,Oxfam,Agregado,Vacio no permitido
 oxfam_department_summary_2026,participants,Participantes,Conteo,Departamento,2026,Oxfam,Agregado,Vacio no permitido

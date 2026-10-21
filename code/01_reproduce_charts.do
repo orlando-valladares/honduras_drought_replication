@@ -79,24 +79,43 @@ graph export "$publication_root/output/figures/figure-4-distribuciones-acumulada
 graph export "$publication_root/output/figures/figure-4-distribuciones-acumuladas.svg", replace
 graph export "$publication_root/output/figures/figure-4-distribuciones-acumuladas.png", width(1800) replace
 
-* Figura A3: precios nominales, enero de cada año = 100.
-import delimited using "$publication_root/data/derived/maize_prices_2015_2026.csv", ///
+* Figura A3: variación acumulada y referencia de años sin anomalía sustancial.
+import delimited using "$publication_root/data/derived/maize_price_figure_a3.csv", ///
     varnames(1) encoding("utf-8") clear
-assert abs(price_hnl_per_tonne - 7758.85) < .001 if year == 2015 & month == 1
-assert abs(price_hnl_per_tonne - 9810.95) < .001 if year == 2015 & month == 7
-assert abs(price_hnl_per_tonne - 11910.44) < .001 if year == 2026 & month == 1
-assert abs(price_hnl_per_tonne - 17445.15) < .001 if year == 2026 & month == 8
+assert abs(price_hnl_per_tonne2015 - 7758.85) < .001 if month == 1
+assert abs(price_hnl_per_tonne2015 - 9810.95) < .001 if month == 7
+assert abs(pct_change_2015 - 26.448507) < .00001 if month == 7
+assert missing(price_hnl_per_tonne2015) if month == 10
+assert abs(price_hnl_per_tonne2015 - 8194.25) < .001 if month == 12
+assert abs(price_hnl_per_tonne2026 - 11910.44) < .001 if month == 1
+assert abs(price_hnl_per_tonne2026 - 17445.15) < .001 if month == 8
+assert abs(pct_change_2026 - 46.469400) < .00001 if month == 8
+assert missing(price_hnl_per_tonne2026) if month > 8
+assert n_reference_years == 12
+capture drop label_2015_july label_2015_december label_2026_august
+generate str24 label_2015_july = "+26,4% en julio" if month == 7
+generate str28 label_2015_december = "+5,6% en diciembre" if month == 12
+generate str25 label_2026_august = "+46,5% en agosto" if month == 8
 twoway ///
-    (connected price_index_january_100 month if year == 2015, sort ///
+    (rarea reference_p25 reference_p75 month, fcolor(gs14) lcolor(none)) ///
+    (line reference_median month, sort lcolor(gs7) lpattern(dash) lwidth(medthick)) ///
+    (connected pct_change_2015 month, sort cmissing(n) ///
         lcolor(navy) mcolor(navy) msymbol(circle) lwidth(medthick)) ///
-    (connected price_index_january_100 month if year == 2026, sort ///
-        lcolor(orange) mcolor(orange) msymbol(diamond) lwidth(medthick)), ///
-    xlabel(1 "Ene" 2 "Feb" 3 "Mar" 4 "Abr" 5 "May" 6 "Jun" 7 "Jul" 8 "Ago") ///
-    ylabel(100(10)150, angle(horizontal)) yscale(range(98 154)) ///
-    ytitle("Índice de precio nominal (enero = 100)") xtitle("") ///
-    text(128.8 7 "+26,4% en julio", color(navy)) ///
-    text(149.2 8 "+46,5% en agosto", color(orange) placement(nw)) ///
-    legend(order(1 "2015" 2 "2026") rows(1) position(11) ring(0) ///
+    (connected pct_change_2026 month, sort cmissing(n) ///
+        lcolor(orange) mcolor(orange) msymbol(diamond) lwidth(medthick)) ///
+    (scatter pct_change_2015 month if month == 7, msymbol(circle) mcolor(navy) ///
+        mlabel(label_2015_july) mlabposition(11) mlabcolor(navy)) ///
+    (scatter pct_change_2015 month if month == 12, msymbol(circle) mcolor(navy) ///
+        mlabel(label_2015_december) mlabposition(11) mlabcolor(navy)) ///
+    (scatter pct_change_2026 month if month == 8, msymbol(diamond) mcolor(orange) ///
+        mlabel(label_2026_august) mlabposition(1) mlabcolor(orange)), ///
+    yline(0, lcolor(gs10) lwidth(vthin)) ///
+    xlabel(1 "Ene" 2 "Feb" 3 "Mar" 4 "Abr" 5 "May" 6 "Jun" ///
+        7 "Jul" 8 "Ago" 9 "Sep" 10 "Oct" 11 "Nov" 12 "Dic") ///
+    ylabel(-20(10)60, angle(horizontal)) yscale(range(-20 60)) ///
+    ytitle("Variación acumulada nominal respecto a enero (%)") xtitle("") ///
+    legend(order(3 "2015" 4 "2026" 2 "Mediana de referencia" ///
+        1 "Rango intercuartílico") rows(2) position(11) ring(0) ///
         region(lcolor(none))) graphregion(color(white)) plotregion(color(white))
 graph export "$publication_root/output/figures/appendix-a3-precios-maiz.pdf", replace
 graph export "$publication_root/output/figures/appendix-a3-precios-maiz.svg", replace

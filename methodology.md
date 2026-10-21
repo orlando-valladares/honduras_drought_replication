@@ -30,15 +30,19 @@ R = 100 × D^0,50 × N^0,25 × S^0,25
 
 FEWS NET aporta contexto independiente sobre inseguridad alimentaria y no entra en el cálculo de `R`.
 
+Los tres mapas departamentales de la Figura 5 usan clases discretas y las convenciones del generador original de la Figura 5 de Guatemala. El panel de población agrícola conserva los cortes comunes de 45.000, 60.000, 100.000, 150.000 y 250.000 personas; la participación agrícola usa cuartiles propios de Honduras porque su rango observado difiere; y el índice utiliza cortes de 0, 25, 50, 75 y 100. La clasificación modifica únicamente la presentación: no cambia las mediciones ni la fórmula de prioridad.
+
 ## Precios del maíz
 
-La figura A3 utiliza las 16 observaciones mensuales disponibles entre enero y agosto de 2015 y de 2026. Para cada año:
+La figura A3 normaliza cada trayectoria anual antes de cualquier agregación:
 
 ```text
-índice = 100 × precio_mensual / precio_de_enero
+variación_porcentual = 100 × (precio_mensual / precio_de_enero − 1)
 ```
 
-Se verificaron cuatro observaciones de control: L7.758,85 en enero de 2015; L9.810,95 en julio de 2015; L11.910,44 en enero de 2026; y L17.445,15 en agosto de 2026. No hay interpolación. La comparación es nominal: no ajusta por inflación y no compara precios reales entre años. El archivo fuente recibido no identifica al proveedor institucional original.
+La referencia histórica parte de los años solapados entre la serie mensual de precios y los resultados nacionales CHIRPS. Son elegibles los años con puntaje nacional leave-one-out de Primera entre −1 y +1, excluyendo 2015 y 2026, y con 12 precios válidos de enero a diciembre. Resultaron 12 años: 2000, 2002, 2004, 2006, 2009, 2011, 2012, 2013, 2016, 2018, 2020 y 2023. Cada año recibe el mismo peso. La línea de referencia es la mediana mensual de sus variaciones ya normalizadas; la banda muestra los percentiles 25 y 75 mensuales. Es un patrón histórico descriptivo entre años seleccionados sin anomalías sustanciales de lluvia, no un contrafactual causal, pronóstico ni precio futuro esperado.
+
+Se verificaron L7.758,85 en enero de 2015, L9.810,95 y +26,4485% en julio, y L8.194,25 y +5,6117% en diciembre. Octubre de 2015 no está disponible: la línea se interrumpe y no se interpola. Para 2026 se verificaron L11.910,44 en enero y L17.445,15 y +46,4694% en agosto; la trayectoria no se extiende después de esa última observación real. La comparación es nominal y no ajusta por inflación. Futuras comparaciones de niveles reales entre años deberían incorporar ese ajuste. El archivo fuente recibido no identifica al proveedor institucional original.
 
 ## Oxfam
 

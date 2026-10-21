@@ -15,7 +15,10 @@ Este directorio contiene únicamente datos analíticos agregados o climáticos d
 | `derived/geo2_exposure_2015_2026.csv` | 250 | GEO2–año | 2015, 2026 | Figuras 2 y 4 |
 | `derived/geo2_priority_2026.csv` | 125 | GEO2 | 2026 con población fija de 2013 | Figura A1 |
 | `derived/department_priority_2026.csv` | 18 | departamento | 2026 con población fija de 2013 | Figura 5 |
-| `derived/maize_prices_2015_2026.csv` | 16 | mes–año | enero–agosto de 2015 y 2026 | Figura A3 |
+| `derived/maize_price_figure_a3.csv` | 12 | mes | enero–diciembre | Figura A3: trayectorias focales y resumen histórico |
+| `derived/maize_price_normalized_monthly.csv` | 321 | mes–año | 2000–2026 | Observaciones, normalización y banderas de selección de A3 |
+| `derived/maize_price_reference_selection.csv` | 27 | año | 2000–2026 | Auditoría de elegibilidad de años de referencia de A3 |
+| `derived/maize_prices_2015_2026.csv` | 16 | mes–año | enero–agosto de 2015 y 2026 | Archivo focal anterior, conservado para trazabilidad |
 | `derived/oxfam_department_summary_2026.csv` | 4 | departamento de Honduras | 2026 | Tabla A2 y contexto de Figura 4 |
 
 El diccionario variable por variable está en [data-dictionary.csv](data-dictionary.csv). Todos los CSV usan UTF-8, punto decimal, ausencia vacía y códigos geográficos como texto.

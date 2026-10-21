@@ -42,21 +42,34 @@ use "$publication_root/output/spatial/honduras_departments", clear
 merge 1:1 department using `department_values', assert(match) nogenerate
 grmap agricultural_industry_people using ///
     "$publication_root/output/spatial/honduras_departments_shp", ///
-    id(_ID) fcolor(Greens) ocolor(white ..) osize(vthin ..) ///
-    title("(a) Personas en la rama agrícola", size(small)) ///
-    legend(size(vsmall)) graphregion(color(white)) name(panel_a, replace)
+    id(_ID) clmethod(custom) ///
+    clbreaks(0 45000 60000 100000 150000 250000 1000000000) ///
+    fcolor("229 245 224" "199 233 192" "161 217 155" "116 196 118" "49 163 84" "0 109 44") ///
+    ocolor(white ..) osize(vthin ..) ///
+    legend(size(vsmall) position(6) rows(2) region(lcolor(none))) ///
+    graphregion(color(white) margin(zero)) name(panel_a, replace)
 graph export "$publication_root/output/figures/figure-5a.pdf", replace
+graph export "$publication_root/output/figures/figure-5a.svg", replace
+graph export "$publication_root/output/figures/figure-5a.png", width(1800) replace
 grmap agriculture_share_known_industry using ///
     "$publication_root/output/spatial/honduras_departments_shp", ///
-    id(_ID) fcolor(Blues) ocolor(white ..) osize(vthin ..) ///
-    title("(b) Participación agrícola", size(small)) ///
-    legend(size(vsmall)) graphregion(color(white)) name(panel_b, replace)
+    id(_ID) clmethod(custom) clbreaks(0 53.116 55.550 65.453 100) ///
+    fcolor("229 245 224" "161 217 155" "49 163 84" "0 109 44") ///
+    ocolor(white ..) osize(vthin ..) ///
+    legend(size(vsmall) position(6) rows(2) region(lcolor(none))) ///
+    graphregion(color(white) margin(zero)) name(panel_b, replace)
 graph export "$publication_root/output/figures/figure-5b.pdf", replace
+graph export "$publication_root/output/figures/figure-5b.svg", replace
+graph export "$publication_root/output/figures/figure-5b.png", width(1800) replace
 grmap p using "$publication_root/output/spatial/honduras_departments_shp", ///
-    id(_ID) fcolor(Heat) ocolor(white ..) osize(vthin ..) ///
-    title("(c) Índice combinado de prioridad", size(small)) ///
-    legend(size(vsmall)) graphregion(color(white)) name(panel_c, replace)
+    id(_ID) clmethod(custom) clbreaks(0 25 50 75 100) ///
+    fcolor("254 224 210" "252 146 114" "251 106 74" "165 15 21") ///
+    ocolor(white ..) osize(vthin ..) ///
+    legend(size(vsmall) position(6) rows(2) region(lcolor(none))) ///
+    graphregion(color(white) margin(zero)) name(panel_c, replace)
 graph export "$publication_root/output/figures/figure-5c.pdf", replace
+graph export "$publication_root/output/figures/figure-5c.svg", replace
+graph export "$publication_root/output/figures/figure-5c.png", width(1800) replace
 graph combine panel_a panel_b panel_c, cols(2) graphregion(color(white))
 graph export "$publication_root/output/figures/figure-5-paneles-analiticos.pdf", replace
 

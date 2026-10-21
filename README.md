@@ -16,7 +16,7 @@ Este repositorio presenta un análisis descriptivo independiente de la sequía d
 ## Contenido
 
 - `docs/`: sitio estático para GitHub Pages y versiones definitivas del informe y el apéndice.
-- `figures/`: figuras publicadas en formatos de descarga; la figura nueva de precios está en PDF, SVG y PNG.
+- `figures/`: figuras publicadas en formatos de descarga; la comparación histórica de precios y los paneles cartográficos finales están en PDF, SVG y PNG.
 - `data/derived/`: datos analíticos agregados y ordenados utilizados en los gráficos.
 - `data/geography/`: límites de publicación derivados de geoBoundaries, en GeoJSON y Shapefile.
 - `code/`: scripts Stata para regenerar gráficos a partir de los datos públicos.

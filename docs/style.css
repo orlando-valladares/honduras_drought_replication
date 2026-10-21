@@ -277,6 +277,26 @@ main {
   border-left: 3px solid var(--accent);
 }
 
+.interpretation blockquote {
+  margin: 0;
+}
+
+.interpretation blockquote p {
+  font-size: clamp(1.12rem, 1.75vw, 1.48rem);
+  line-height: 1.48;
+}
+
+.interpretation cite {
+  display: block;
+  margin-top: 1.25rem;
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: .78rem;
+  font-style: normal;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
 .interpretation .lead {
   margin-bottom: 1.4rem;
   font-size: clamp(1.25rem, 2.1vw, 1.75rem);
