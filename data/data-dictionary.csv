@@ -1,0 +1,68 @@
+dataset,variable,definition,unit,geography,years,source,transformation,missing_values
+municipal_rainfall_z_1981_2026,adm2_id,Identificador estable geoBoundaries,Texto,ADM2,1981-2026,geoBoundaries CGAZ,Sin transformación,Vacio no permitido
+municipal_rainfall_z_1981_2026,department,Nombre de departamento,Texto,ADM1,1981-2026,geoBoundaries CGAZ,Asignación territorial,Vacio no permitido
+municipal_rainfall_z_1981_2026,municipality,Nombre de municipio,Texto,ADM2,1981-2026,geoBoundaries CGAZ,Sin transformación,Vacio no permitido
+municipal_rainfall_z_1981_2026,year,Año de Primera,Año,ADM2,1981-2026,CHIRPS v3,Sin transformación,Vacio no permitido
+municipal_rainfall_z_1981_2026,rain_may_aug_mm,Lluvia acumulada mayo-agosto,mm,ADM2-año,1981-2026,CHIRPS v3,Media por área,Vacio no permitido
+municipal_rainfall_z_1981_2026,reference_mean_mm,Media de lluvia excluyendo el año evaluado,mm,ADM2-año,1981-2026,CHIRPS v3,Referencia leave-one-out,Vacio no permitido
+municipal_rainfall_z_1981_2026,reference_sd_mm,Desviación estándar excluyendo el año evaluado,mm,ADM2-año,1981-2026,CHIRPS v3,Referencia leave-one-out,Vacio no permitido
+municipal_rainfall_z_1981_2026,z_loo,Puntaje estandarizado leave-one-out,Desviaciones estándar,ADM2-año,1981-2026,CHIRPS v3,(lluvia-media)/DE,Vacio no permitido
+annual_exposure_1981_2026,year,Año de Primera,Año,Nacional,1981-2026,CHIRPS v3,Sin transformación,Vacio no permitido
+annual_exposure_1981_2026,units,Número de ADM2 observadas,Conteo,Nacional-año,1981-2026,CHIRPS v3,Conteo,Vacio no permitido
+annual_exposure_1981_2026,extreme_units,ADM2 con z menor que -2,Conteo,Nacional-año,1981-2026,CHIRPS v3,Conteo por umbral,Vacio no permitido
+annual_exposure_1981_2026,municipal_pct,Proporción territorial extrema,Porcentaje,Nacional-año,1981-2026,CHIRPS v3,100 por extreme_units/units,Vacio no permitido
+annual_exposure_1981_2026,ag_total,Personas agrícolas en GEO2 comparables,Personas ponderadas,Nacional-año,1981-2026,IPUMS 2013,Distribución fija,Vacio no permitido
+annual_exposure_1981_2026,ag_extreme,Personas agrícolas en GEO2 con z menor que -2,Personas ponderadas,Nacional-año,1981-2026,IPUMS 2013 y CHIRPS v3,Suma ponderada por umbral,Vacio no permitido
+annual_exposure_1981_2026,agricultural_pct,Proporción agrícola extrema,Porcentaje,Nacional-año,1981-2026,IPUMS 2013 y CHIRPS v3,100 por ag_extreme/ag_total,Vacio no permitido
+department_historical_comparison,department_id,Identificador estable de departamento,Texto,Departamento,2015-2026,geoBoundaries CGAZ,Sin transformación,Vacio no permitido
+department_historical_comparison,department,Nombre de departamento,Texto,Departamento,2015-2026,geoBoundaries CGAZ,Sin transformación,Vacio no permitido
+department_historical_comparison,historical_mean_mm,Media histórica excluyendo 2026,mm,Departamento,1981-2025,CHIRPS v3,Media descriptiva,Vacio no permitido
+department_historical_comparison,historical_median_mm,Mediana histórica excluyendo 2026,mm,Departamento,1981-2025,CHIRPS v3,Mediana descriptiva,Vacio no permitido
+department_historical_comparison,historical_sd_mm,Desviación estándar histórica excluyendo 2026,mm,Departamento,1981-2025,CHIRPS v3,DE descriptiva,Vacio no permitido
+department_historical_comparison,rain_2015_mm,Lluvia observada en 2015,mm,Departamento,2015,CHIRPS v3,Media por área,Vacio no permitido
+department_historical_comparison,rain_2026_mm,Lluvia observada en 2026,mm,Departamento,2026,CHIRPS v3,Media por área,Vacio no permitido
+cdf_curves_2015_2026,curve_id,Identificador de curva,Texto,ADM2 o GEO2,2015-2026,Datos derivados,Definido por geografía y ponderación,Vacio no permitido
+cdf_curves_2015_2026,year,Año o período de referencia,Texto,ADM2 o GEO2,1981-2026,CHIRPS v3,Sin transformación,Vacio no permitido
+cdf_curves_2015_2026,geography,Nivel geográfico,Texto,ADM2 o GEO2,2015-2026,Datos derivados,Clasificación,Vacio no permitido
+cdf_curves_2015_2026,weight_type,Tipo de ponderación,Texto,ADM2 o GEO2,2015-2026,Datos derivados,Unidad o población agrícola fija,Vacio no permitido
+cdf_curves_2015_2026,z_loo,Puntaje ordenado,Desviaciones estándar,ADM2 o GEO2,1981-2026,CHIRPS v3,Orden ascendente,Vacio no permitido
+cdf_curves_2015_2026,weight,Peso de la observación,Unidad o personas,ADM2 o GEO2,2015-2026,IPUMS 2013 o unidad,Sin transformación,Vacio no permitido
+cdf_curves_2015_2026,cumulative_share,Proporción acumulada,Proporción,ADM2 o GEO2,2015-2026,Datos derivados,Suma acumulada normalizada,Vacio no permitido
+geo2_exposure_2015_2026,residence_group_code,Código GEO2 de residencia,Texto,GEO2,2015-2026,IPUMS International,Seis caracteres,Vacio no permitido
+geo2_exposure_2015_2026,z_loo,Media simple de z municipal en el grupo,Desviaciones estándar,GEO2-año,2015-2026,CHIRPS v3 y cruce GEO2,Media de municipios miembros,Vacio no permitido
+geo2_exposure_2015_2026,department,Nombre de departamento,Texto,Departamento,2015-2026,IPUMS International,Asignación GEO2,Vacio no permitido
+geo2_exposure_2015_2026,agricultural_industry_people,Personas clasificadas en INDGEN 010,Personas ponderadas,GEO2,2013,IPUMS International,Agregado de microdatos,Vacio no permitido
+geo2_exposure_2015_2026,known_industry_people,Personas con industria conocida,Personas ponderadas,GEO2,2013,IPUMS International,Agregado de microdatos,Vacio no permitido
+geo2_exposure_2015_2026,agriculture_share_known_industry,Participación agrícola entre industria conocida,Porcentaje,GEO2,2013,IPUMS International,100 por agrícola/industria conocida,Vacio no permitido
+department_priority_2026,department,Nombre de departamento,Texto,Departamento,2026,Datos derivados,Agregación,Vacio no permitido
+department_priority_2026,rain_may_aug_mm,Lluvia mayo-agosto,mm,Departamento,2026,CHIRPS v3,Media por área,Vacio no permitido
+department_priority_2026,z_loo,Puntaje estandarizado leave-one-out,Desviaciones estándar,Departamento,2026,CHIRPS v3,(lluvia-media)/DE,Vacio no permitido
+department_priority_2026,agricultural_industry_people,Personas agrícolas,Personas ponderadas,Departamento,2013,IPUMS International,Agregado GEO2,Vacio no permitido
+department_priority_2026,known_industry_people,Personas con industria conocida,Personas ponderadas,Departamento,2013,IPUMS International,Agregado GEO2,Vacio no permitido
+department_priority_2026,agriculture_share_known_industry,Participación agrícola,Porcentaje,Departamento,2013,IPUMS International,100 por agrícola/industria conocida,Vacio no permitido
+department_priority_2026,D,Percentil de intensidad de sequía,Proporción,Departamento,2026,Datos derivados,Rango medio de -z,Vacio no permitido
+department_priority_2026,N,Percentil de población agrícola,Proporción,Departamento,2013,Datos derivados,Rango medio,Vacio no permitido
+department_priority_2026,S,Percentil de participación agrícola,Proporción,Departamento,2013,Datos derivados,Rango medio,Vacio no permitido
+department_priority_2026,P,Índice combinado de prioridad,Índice 0-100,Departamento,2026,Datos derivados,100 por D^.50 N^.25 S^.25,Vacio no permitido
+maize_prices_2015_2026,year,Año,Año,Nacional,2015 y 2026,Archivo suministrado,Sin transformación,Vacio no permitido
+maize_prices_2015_2026,month,Mes calendario,Número,Nacional,enero-agosto,Archivo suministrado,Sin transformación,Vacio no permitido
+maize_prices_2015_2026,month_name_es,Nombre del mes,Texto,Nacional,enero-agosto,Archivo suministrado,Traducción de etiqueta,Vacio no permitido
+maize_prices_2015_2026,date,Primer día del mes,Fecha ISO,Nacional,2015 y 2026,Archivo suministrado,Conversión de fecha,Vacio no permitido
+maize_prices_2015_2026,price_hnl_per_tonne,Precio mayorista nominal,HNL por tonelada,Nacional,2015 y 2026,Archivo suministrado,Sin ajuste por inflación,Vacio no permitido
+maize_prices_2015_2026,january_price_hnl_per_tonne,Precio nominal de enero,HNL por tonelada,Nacional-año,2015 y 2026,Archivo suministrado,Base anual,Vacio no permitido
+maize_prices_2015_2026,price_index_january_100,Índice nominal con enero igual a 100,Índice,Nacional-año,2015 y 2026,Archivo suministrado,100 por precio/precio enero,Vacio no permitido
+maize_prices_2015_2026,commodity,Producto,Texto,Nacional,2015 y 2026,Archivo suministrado,Etiqueta,Vacio no permitido
+maize_prices_2015_2026,source_scope,Cobertura declarada,Texto,Nacional,2015 y 2026,Archivo suministrado,Etiqueta,Vacio no permitido
+maize_prices_2015_2026,currency_unit,Moneda y unidad,Texto,Nacional,2015 y 2026,Archivo suministrado,Etiqueta,Vacio no permitido
+oxfam_department_summary_2026,department,Departamento hondureño de la muestra,Texto,Departamento,2026,Oxfam,Sin transformación,Vacio no permitido
+oxfam_department_summary_2026,focus_groups,Grupos focales,Conteo,Departamento,2026,Oxfam,Agregado,Vacio no permitido
+oxfam_department_summary_2026,participants,Participantes,Conteo,Departamento,2026,Oxfam,Agregado,Vacio no permitido
+oxfam_department_summary_2026,z_footprint,Puntaje z de la huella municipal,Desviaciones estándar,Departamento,2026,CHIRPS v3 y Oxfam,Media de huella,Vacio no permitido
+oxfam_department_summary_2026,loss_le_25_households,Hogares estimados con pérdida hasta 25%,Hogares,Departamento,2026,Oxfam,Agregado comunitario,Vacio no permitido
+oxfam_department_summary_2026,loss_25_50_households,Hogares estimados con pérdida de 25-50%,Hogares,Departamento,2026,Oxfam,Agregado comunitario,Vacio no permitido
+oxfam_department_summary_2026,loss_50_75_households,Hogares estimados con pérdida de 50-75%,Hogares,Departamento,2026,Oxfam,Agregado comunitario,Vacio no permitido
+oxfam_department_summary_2026,loss_75_100_households,Hogares estimados con pérdida de 75-100%,Hogares,Departamento,2026,Oxfam,Agregado comunitario,Vacio no permitido
+oxfam_department_summary_2026,loss_le_25_households_pct,Participación de pérdida hasta 25%,Porcentaje,Departamento,2026,Oxfam,100 por banda/total,Vacio no permitido
+oxfam_department_summary_2026,loss_25_50_households_pct,Participación de pérdida 25-50%,Porcentaje,Departamento,2026,Oxfam,100 por banda/total,Vacio no permitido
+oxfam_department_summary_2026,loss_50_75_households_pct,Participación de pérdida 50-75%,Porcentaje,Departamento,2026,Oxfam,100 por banda/total,Vacio no permitido
+oxfam_department_summary_2026,loss_75_100_households_pct,Participación de pérdida 75-100%,Porcentaje,Departamento,2026,Oxfam,100 por banda/total,Vacio no permitido

@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Análisis independiente de la sequía de Primera de 2026 en Honduras, su exposición agrícola y focalización territorial.">
+  <title>Sequía de 2026 en Honduras — Orlando Valladares</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="gallery.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#figuras">Saltar a las figuras</a>
+
+  <header class="masthead">
+    <nav class="topnav" aria-label="Navegación principal">
+      <a class="wordmark" href="#inicio">OV / Investigación</a>
+      <div class="topnav-links">
+        <a href="downloads/Honduras_ES.pdf">Informe</a>
+        <a href="downloads/Honduras_Appendix_ES.pdf">Apéndice</a>
+        <a href="#metodo">Método</a>
+      </div>
+    </nav>
+    <div class="hero" id="inicio">
+      <p class="eyebrow">Honduras · Primera 2026</p>
+      <h1>Intensidad histórica, exposición agrícola y focalización territorial</h1>
+      <p class="dek">Una lectura descriptiva de la lluvia de mayo a agosto, la población vinculada a la rama agrícola y la geografía de una sequía excepcional.</p>
+      <div class="headline-stats" aria-label="Resultados principales">
+        <div><strong>−2,25</strong><span>puntaje z nacional</span></div>
+        <div><strong>51,9%</strong><span>de ADM2 en sequía extrema</span></div>
+        <div><strong>44,1%</strong><span>de población agrícola comparable expuesta</span></div>
+      </div>
+      <p class="hero-links">
+        <a class="primary-link" href="downloads/Honduras_ES.pdf">Leer el informe completo</a>
+        <a href="downloads/Honduras_Appendix_ES.pdf">Consultar el apéndice</a>
+      </p>
+    </div>
+  </header>
+
+  <main id="figuras">
+    <article class="figure-section" id="figura-1" data-gallery-index="0">
+      <div class="figure-column">
+        <p class="figure-number">01 / 06</p>
+        <h2>Figura 1. Honduras. Puntaje z municipal de lluvia de Primera, 2026.</h2>
+        <button class="image-button" type="button" data-image="figures/figure-1-mapa-municipal.png" data-alt="Mapa municipal de Honduras con puntajes z de lluvia de Primera en 2026">
+          <img src="figures/figure-1-mapa-municipal.png" alt="Mapa municipal de Honduras con puntajes z de lluvia de Primera en 2026" loading="eager">
+          <span>Ampliar figura</span>
+        </button>
+        <div class="caption">
+          <p><em>Nota.</em> CHIRPS v3; lluvia mayo–agosto. Cada puntaje z excluye el año evaluado de la referencia 1981–2026; los umbrales y la escala de color son comunes. Lago de Yojoa se muestra sin dato y no integra las 297 unidades observadas.</p>
+          <p><strong>Fuente.</strong> Elaboración propia con CHIRPS v3 y límites geoBoundaries CGAZ.</p>
+        </div>
+        <div class="download-row">
+          <a href="downloads/figures/figure-1-mapa-municipal.pdf">Figura PDF</a>
+          <a href="figures/figure-1-mapa-municipal.png">PNG completo</a>
+          <a href="data/municipal_rainfall_z_1981_2026.csv" download>Datos CSV</a>
+        </div>
+      </div>
+      <aside class="interpretation">
+        <p class="aside-label">Lectura</p>
+        <p class="lead">La sequía de 2026 no es solo un promedio nacional bajo: su intensidad extrema cubre una parte excepcionalmente amplia del territorio.</p>
+        <p>La lluvia nacional de Primera fue 580 mm, con un puntaje <em>z</em> de −2,25 frente a la referencia histórica. Los déficits más severos se concentran en el centro, sur, oriente y varios departamentos occidentales.</p>
+        <p>En total, 154 de 297 unidades ADM2 observadas —51,9%— se encuentran por debajo del umbral de sequía extrema.</p>
+      </aside>
+    </article>
+
+    <article class="figure-section" id="figura-2" data-gallery-index="1">
+      <div class="figure-column">
+        <p class="figure-number">02 / 06</p>
+        <h2>Figura 2. Honduras. Proporción de unidades ADM2 y personas en la rama agrícola expuestas a sequía extrema, 1981–2026.</h2>
+        <button class="image-button" type="button" data-image="figures/figure-2-exposicion-historica.png" data-alt="Barras históricas de exposición territorial y agrícola a sequía extrema en Honduras">
+          <img src="figures/figure-2-exposicion-historica.png" alt="Barras históricas de exposición territorial y agrícola a sequía extrema en Honduras" loading="lazy">
+          <span>Ampliar figura</span>
+        </button>
+        <div class="caption">
+          <p><em>Nota.</em> CHIRPS v3; lluvia mayo–agosto. Cada puntaje z se calcula excluyendo el año evaluado de la referencia 1981–2026. La serie territorial usa 297 unidades ADM2 observadas; la exposición agrícola pondera 125 grupos GEO2 completos con la distribución de IPUMS 2013 fija. No reconstruye la composición laboral efectiva de cada año ni inventa conteos municipales.</p>
+          <p><strong>Fuentes.</strong> CHIRPS v3; Censo de Honduras 2013 mediante IPUMS International, resultados agregados.</p>
+        </div>
+        <div class="download-row">
+          <a href="downloads/figures/figure-2-exposicion-historica.pdf">Figura PDF</a>
+          <a href="figures/figure-2-exposicion-historica.png">PNG completo</a>
+          <a href="data/annual_exposure_1981_2026.csv" download>Datos CSV</a>
+        </div>
+      </div>
+      <aside class="interpretation">
+        <p class="aside-label">Territorio y población</p>
+        <p class="lead">En 2026 la sequía extrema es más extensa territorialmente que en 2015, pero la proporción agrícola expuesta es ligeramente menor.</p>
+        <p>La comparación separa dos preguntas: cuántos territorios cruzan el umbral y qué proporción de la población agrícola fija de 2013 vive en GEO2 que lo cruzan. En 2015 fueron 45,5% y 45,7%; en 2026, 51,9% y 44,1%.</p>
+        <p>El precedente de 2015 fue materialmente grave: COPECO estimó 280.000 familias afectadas. EMMA calculó pérdidas de 2,3–2,4 millones de quintales de maíz, valoradas entre L747,5 y L1.090,2 millones —aproximadamente USD 33,8–49,3 millones de 2015—. Por eso la comparación aporta más que la media nacional de lluvia.</p>
+      </aside>
+    </article>
+
+    <article class="figure-section" id="figura-3" data-gallery-index="2">
+      <div class="figure-column">
+        <p class="figure-number">03 / 06</p>
+        <h2>Figura 3. Honduras. Departamentos: 2015 y 2026 en escala histórica local.</h2>
+        <button class="image-button" type="button" data-image="figures/figure-3-comparacion-departamental.png" data-alt="Comparación departamental de lluvia de 2015 y 2026 con medias históricas locales">
+          <img src="figures/figure-3-comparacion-departamental.png" alt="Comparación departamental de lluvia de 2015 y 2026 con medias históricas locales" loading="lazy">
+          <span>Ampliar figura</span>
+        </button>
+        <div class="caption">
+          <p><em>Nota.</em> La Figura 3 ubica, para cada departamento, la media, mediana y media ± 1 DE descriptivas, además de la lluvia de 2015 (triángulo azul) y 2026 (círculo rojo). En la Figura 4, las líneas continuas son CDF de unidades ADM2 y las discontinuas son CDF ponderadas por personas agrícolas en grupos GEO2 de IPUMS 2013. La línea gris es sólo la referencia geográfica municipio–año; no se presenta una serie laboral histórica que sugiera cambios no observados en la composición ocupacional.</p>
+          <p><strong>Fuente.</strong> Elaboración propia con CHIRPS v3.</p>
+        </div>
+        <div class="download-row">
+          <a href="downloads/figures/figure-3-comparacion-departamental.pdf">Figura PDF</a>
+          <a href="figures/figure-3-comparacion-departamental.png">PNG completo</a>
+          <a href="data/department_historical_comparison.csv" download>Datos CSV</a>
+        </div>
+      </div>
+      <aside class="interpretation">
+        <p class="aside-label">Contrastes departamentales</p>
+        <p class="lead">Olancho y El Paraíso presentan las anomalías departamentales más profundas de 2026; Islas de la Bahía queda fuera de la señal seca y Gracias a Dios es relativamente menos afectado.</p>
+        <p>Olancho alcanza <em>z</em> = −2,56 y El Paraíso −2,50. También cruzan el umbral extremo La Paz, Choluteca, Ocotepeque, Intibucá, Lempira, Valle y Copán.</p>
+        <p>La geografía más afectada incluye departamentos occidentales con alta participación agrícola. Esa coincidencia importa para la vulnerabilidad, pero no convierte la intensidad climática en una medida completa de pérdidas o inseguridad alimentaria.</p>
+      </aside>
+    </article>
+
+    <article class="figure-section" id="figura-4" data-gallery-index="3">
+      <div class="figure-column">
+        <p class="figure-number">04 / 06</p>
+        <h2>Figura 4. Honduras. Distribución acumulada de puntajes z.</h2>
+        <button class="image-button image-button-large" type="button" data-image="figures/figure-4-distribuciones-acumuladas.png" data-alt="Distribuciones acumuladas territoriales y agrícolas de puntajes z en 2015 y 2026">
+          <img src="figures/figure-4-distribuciones-acumuladas.png" alt="Distribuciones acumuladas territoriales y agrícolas de puntajes z en 2015 y 2026" loading="lazy">
+          <span>Ampliar figura</span>
+        </button>
+        <div class="caption">
+          <p><em>Nota.</em> La Figura 3 ubica, para cada departamento, la media, mediana y media ± 1 DE descriptivas, además de la lluvia de 2015 (triángulo azul) y 2026 (círculo rojo). En la Figura 4, las líneas continuas son CDF de unidades ADM2 y las discontinuas son CDF ponderadas por personas agrícolas en grupos GEO2 de IPUMS 2013. La línea gris es sólo la referencia geográfica municipio–año; no se presenta una serie laboral histórica que sugiera cambios no observados en la composición ocupacional.</p>
+          <p><strong>Fuentes.</strong> CHIRPS v3; Censo de Honduras 2013 mediante IPUMS International; evaluación rápida de Oxfam para el contraste sustantivo.</p>
+        </div>
+        <div class="download-row">
+          <a href="downloads/figures/figure-4-distribuciones-acumuladas.pdf">Figura PDF</a>
+          <a href="figures/figure-4-distribuciones-acumuladas.png">PNG completo</a>
+          <a href="data/cdf_curves_2015_2026.csv" download>Curvas CSV</a>
+          <a href="data/oxfam_department_summary_2026.csv" download>Oxfam agregado</a>
+        </div>
+      </div>
+      <aside class="interpretation">
+        <p class="aside-label">Exposición bajo el umbral</p>
+        <p class="big-number">474.615 <span>personas</span></p>
+        <p>De las 1.077.033 personas clasificadas en la rama agrícola dentro de los 125 GEO2 comparables, 44,1% está expuesto a sequía extrema. No es un conteo exacto de trabajadores actualmente ocupados: aplica la distribución espacial fija del censo de 2013.</p>
+        <p>En los ocho departamentos regionales de la evaluación Oxfam que experimentaban sequía extrema, 94,9% de los hogares comunitarios encuestados reportó pérdidas de cosecha de 75–100%, frente a 53,6% en los otros siete. La brecha muestra por qué el umbral es sustantivamente relevante.</p>
+        <p class="caution">La muestra priorizó comunidades vulnerables y no es nacionalmente representativa. La clasificación de lluvia no prueba causalidad ni garantiza un nivel de pérdidas.</p>
+      </aside>
+    </article>
+
+    <article class="figure-section" id="figura-precios" data-gallery-index="4">
+      <div class="figure-column">
+        <p class="figure-number">05 / 06 · Apéndice</p>
+        <h2>Figura A3. Honduras. Evolución nominal del precio mayorista nacional del maíz blanco, enero–agosto de 2015 y 2026.</h2>
+        <button class="image-button" type="button" data-image="figures/appendix-a3-precios-maiz.png" data-alt="Índices mensuales del precio nominal del maíz blanco en 2015 y 2026 con enero igual a 100">
+          <img src="figures/appendix-a3-precios-maiz.png" alt="Índices mensuales del precio nominal del maíz blanco en 2015 y 2026 con enero igual a 100" loading="lazy">
+          <span>Ampliar figura</span>
+        </button>
+        <div class="caption">
+          <p><em>Nota.</em> Las series se normalizan a enero de cada año (=100) para comparar su evolución nominal relativa. No se ajustan por inflación ni representan una comparación de precios reales entre ambos años. Futuras versiones deberían incorporar un ajuste por inflación para evaluar cambios en términos reales. Serie mayorista nacional de maíz blanco, HNL por tonelada, tomada del archivo <code>HN_GU_Grain_Tonne_2000-2026.csv</code> suministrado al proyecto. El archivo recibido no identifica a su proveedor institucional original; esta limitación se conserva sin atribuir una institución no documentada.</p>
+        </div>
+        <div class="download-row">
+          <a href="downloads/figures/appendix-a3-precios-maiz.pdf">Figura PDF</a>
+          <a href="figures/appendix-a3-precios-maiz.png">PNG completo</a>
+          <a href="data/maize_prices_2015_2026.csv" download>Datos CSV</a>
+        </div>
+      </div>
+      <aside class="interpretation">
+        <p class="aside-label">Precios nominales</p>
+        <p class="lead">El precio mayorista nacional subió 26,4% hasta julio de 2015 y 46,5% hasta agosto de 2026, en cada caso frente a enero del mismo año.</p>
+        <p>El aumento importa cuando la pérdida de cosechas empuja a hogares productores hacia compras de mercado. La figura describe trayectorias dentro de cada año; no presenta una predicción.</p>
+        <p class="caution">Comparación nominal normalizada. Una comparación de precios reales entre años requerirá ajustar por inflación en futuras versiones.</p>
+      </aside>
+    </article>
+
+    <article class="figure-section figure-section-featured" id="figura-5" data-gallery-index="5">
+      <div class="figure-column">
+        <p class="figure-number">06 / 06</p>
+        <h2>Figura 5. Honduras. Exposición agrícola, priorización de respuesta y contexto de inseguridad alimentaria.</h2>
+        <button class="image-button image-button-wide" type="button" data-image="figures/figure-5-priorizacion.png" data-alt="Composición de cuatro paneles sobre población agrícola, participación, prioridad y contexto FEWS NET">
+          <img src="figures/figure-5-priorizacion.png" alt="Composición de cuatro paneles sobre población agrícola, participación, prioridad y contexto FEWS NET" loading="lazy">
+          <span>Ampliar figura completa</span>
+        </button>
+        <div class="panel-links" aria-label="Paneles individuales de la Figura 5">
+          <button type="button" data-image="figures/figure-5a.png" data-alt="Panel A: personas en la rama agrícola por departamento">Panel a</button>
+          <button type="button" data-image="figures/figure-5b.png" data-alt="Panel B: participación agrícola por departamento">Panel b</button>
+          <button type="button" data-image="figures/figure-5c.png" data-alt="Panel C: índice combinado de prioridad por departamento">Panel c</button>
+          <button type="button" data-image="figures/figure-5d-fews-net-context.png" data-alt="Panel D: análisis contextual de FEWS NET para Honduras">Panel d</button>
+        </div>
+        <div class="caption">
+          <p><em>Nota.</em> Los paneles (a)–(c) agregan los 125 grupos GEO2 de residencia con cruce CHIRPS completo; INDGEN=010 identifica agricultura, ganadería, silvicultura y pesca y el denominador de (b) es la población con industria conocida. El índice es R=100(Z<sup>0,50</sup>N<sup>0,25</sup>S<sup>0,25</sup>), con percentiles de rango medio dentro de Honduras. FEWS NET es contexto independiente y no entra en R.</p>
+          <p><strong>Fuentes.</strong> CHIRPS v3; resultados agregados del Censo de Honduras 2013 mediante IPUMS International; FEWS NET para el panel contextual.</p>
+        </div>
+        <div class="download-row">
+          <a href="downloads/figures/figure-5-priorizacion.pdf">Figura PDF</a>
+          <a href="figures/figure-5-priorizacion.png">PNG completo</a>
+          <a href="data/department_priority_2026.csv" download>Datos departamentales</a>
+          <a href="data/geo2_priority_2026.csv" download>Datos GEO2</a>
+        </div>
+      </div>
+      <aside class="interpretation">
+        <p class="aside-label">Focalización</p>
+        <p class="lead">Intensidad de sequía, número de personas agrícolas y dependencia relativa responden preguntas distintas; su combinación hace explícito el criterio territorial.</p>
+        <p>Una zona puede registrar una anomalía severa y poca población, o concentrar mucha población agrícola dentro de una economía más diversificada. El índice pondera esas dimensiones sin permitir que una sola determine la prioridad.</p>
+        <p>Exposición no equivale a inseguridad alimentaria final. FEWS NET añade evidencia sobre medios de vida, acceso a alimentos y capacidad de respuesta, pero no entra en el índice numérico.</p>
+        <p>Combinar información climática y socioeconómica permite orientar recursos hacia territorios donde un shock intenso coincide con mayor exposición, siempre complementando el resultado con evidencia local de vulnerabilidad.</p>
+      </aside>
+    </article>
+  </main>
+
+  <section class="method-strip" id="metodo">
+    <div>
+      <p class="eyebrow">Método y alcance</p>
+      <h2>Datos abiertos para las figuras; límites claros para la reproducción completa.</h2>
+    </div>
+    <div>
+      <p>Los CSV publicados contienen lluvia, puntajes z, curvas, agregados agrícolas, prioridad, precios y resultados Oxfam. Los microdatos de IPUMS no se distribuyen. La población agrícola corresponde a la distribución fija del censo de 2013.</p>
+      <p><a href="https://github.com/orlando-valladares/honduras_drought_replication/blob/main/methodology.md">Leer la metodología</a> · <a href="https://github.com/orlando-valladares/honduras_drought_replication/tree/main/data">Ver todos los datos</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Análisis independiente de Orlando Valladares · Honduras, 2026</p>
+    <p><a href="https://github.com/orlando-valladares/honduras_drought_replication">Repositorio y código de reproducción</a></p>
+  </footer>
+
+  <nav class="figure-controls" aria-label="Navegación entre figuras">
+    <button type="button" id="previous-figure" aria-label="Figura anterior">← Anterior</button>
+    <span id="figure-indicator" aria-live="polite">01 / 06</span>
+    <button type="button" id="next-figure" aria-label="Figura siguiente">Siguiente →</button>
+  </nav>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Figura ampliada">
+    <button class="lightbox-close" type="button" aria-label="Cerrar figura ampliada">Cerrar ×</button>
+    <button class="lightbox-nav lightbox-previous" type="button" aria-label="Figura anterior">←</button>
+    <img src="" alt="Figura ampliada">
+    <button class="lightbox-nav lightbox-next" type="button" aria-label="Figura siguiente">→</button>
+  </dialog>
+</body>
+</html>

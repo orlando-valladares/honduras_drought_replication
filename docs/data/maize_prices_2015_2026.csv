@@ -1,0 +1,17 @@
+year,month,month_name_es,date,price_hnl_per_tonne,january_price_hnl_per_tonne,price_index_january_100,commodity,source_scope,currency_unit
+2015,1,enero,2015-01-01,7758.85,7758.85,100.0,white_maize,national_wholesale,HNL_per_tonne
+2015,2,febrero,2015-02-01,8346.75,7758.85,107.577154,white_maize,national_wholesale,HNL_per_tonne
+2015,3,marzo,2015-03-01,8538.78,7758.85,110.052134,white_maize,national_wholesale,HNL_per_tonne
+2015,4,abril,2015-04-01,8787.41,7758.85,113.256604,white_maize,national_wholesale,HNL_per_tonne
+2015,5,mayo,2015-05-01,8538.17,7758.85,110.044272,white_maize,national_wholesale,HNL_per_tonne
+2015,6,junio,2015-06-01,9009.78,7758.85,116.122621,white_maize,national_wholesale,HNL_per_tonne
+2015,7,julio,2015-07-01,9810.95,7758.85,126.448507,white_maize,national_wholesale,HNL_per_tonne
+2015,8,agosto,2015-08-01,9782.64,7758.85,126.083634,white_maize,national_wholesale,HNL_per_tonne
+2026,1,enero,2026-01-01,11910.44,11910.44,100.0,white_maize,national_wholesale,HNL_per_tonne
+2026,2,febrero,2026-02-01,12989.92,11910.44,109.063309,white_maize,national_wholesale,HNL_per_tonne
+2026,3,marzo,2026-03-01,13608.34,11910.44,114.255561,white_maize,national_wholesale,HNL_per_tonne
+2026,4,abril,2026-04-01,14982.81,11910.44,125.795605,white_maize,national_wholesale,HNL_per_tonne
+2026,5,mayo,2026-05-01,15089.42,11910.44,126.690702,white_maize,national_wholesale,HNL_per_tonne
+2026,6,junio,2026-06-01,15908.16,11910.44,133.564839,white_maize,national_wholesale,HNL_per_tonne
+2026,7,julio,2026-07-01,17182.49,11910.44,144.264108,white_maize,national_wholesale,HNL_per_tonne
+2026,8,agosto,2026-08-01,17445.15,11910.44,146.4694,white_maize,national_wholesale,HNL_per_tonne

@@ -1,0 +1,26 @@
+# Resultados regenerados y archivos temporales
+output/
+*.log
+*.smcl
+*.gph
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+
+# Credenciales y configuraciones locales
+.env
+.env.*
+*.key
+*.pem
+credentials*
+secrets*
+
+# Archivos de compilación
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+*.synctex.gz
