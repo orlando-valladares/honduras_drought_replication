@@ -99,7 +99,7 @@
           <span>Ampliar figura</span>
         </button>
         <div class="caption">
-          <p><em>Nota.</em> La Figura 3 ubica, para cada departamento, la media, mediana y media ± 1 DE descriptivas, además de la lluvia de 2015 (triángulo azul) y 2026 (círculo rojo). En la Figura 4, las líneas continuas son CDF de unidades ADM2 y las discontinuas son CDF ponderadas por personas agrícolas en grupos GEO2 de IPUMS 2013. La línea gris es sólo la referencia geográfica municipio–año; no se presenta una serie laboral histórica que sugiera cambios no observados en la composición ocupacional.</p>
+          <p><em>Nota.</em> La Figura 3 ubica, para cada departamento, la media, mediana y media ± 1 DE descriptivas, además de la lluvia de 2015 (triángulo azul) y 2026 (círculo rojo). En la Figura 4, las líneas continuas son CDF de unidades ADM2 y las discontinuas son CDF ponderadas por personas agrícolas en grupos GEO2 de IPUMS 2013. Las dos vistas alternativas presentan densidades de 2015, 2026 y la referencia agrupada de los otros 44 años. La vista agrícola mantiene fija la distribución de trabajadores del Censo 2013 en todos los años; no representa cambios históricos en la composición ocupacional.</p>
           <p><strong>Fuente.</strong> Elaboración propia con CHIRPS v3.</p>
         </div>
         <div class="download-row">
@@ -120,18 +120,35 @@
       <div class="figure-column">
         <p class="figure-number">04 / 06</p>
         <h2>Figura 4. Honduras. Distribución acumulada de puntajes z.</h2>
-        <button class="image-button image-button-large" type="button" data-image="figures/figure-4-distribuciones-acumuladas.png" data-alt="Distribuciones acumuladas territoriales y agrícolas de puntajes z en 2015 y 2026">
+        <div class="distribution-viewer" data-swap-gallery>
+        <button class="image-button image-button-large" type="button" data-swap-main data-image="figures/figure-4-distribuciones-acumuladas.png" data-alt="Distribuciones acumuladas territoriales y agrícolas de puntajes z en 2015 y 2026" data-label="Curvas acumuladas (CDF)">
           <img src="figures/figure-4-distribuciones-acumuladas.png" alt="Distribuciones acumuladas territoriales y agrícolas de puntajes z en 2015 y 2026" loading="lazy">
           <span>Ampliar figura</span>
         </button>
+        <p class="distribution-active-label" data-swap-main-label>Curvas acumuladas (CDF)</p>
+        <div class="distribution-thumbnails" aria-label="Vistas alternativas de la Figura 4">
+          <button type="button" data-swap-thumb data-swap-image="figures/figure-4a-distribucion-adm2.png" data-swap-alt="Distribución agrupada histórica y distribuciones de 2015 y 2026 para municipios ADM2" data-swap-label="Municipios ADM2">
+            <img src="figures/figure-4a-distribucion-adm2.png" alt="Vista previa de la distribución agrupada para municipios ADM2" loading="lazy">
+            <span>Municipios ADM2</span>
+          </button>
+          <button type="button" data-swap-thumb data-swap-image="figures/figure-4b-distribucion-agricultura.png" data-swap-alt="Distribución histórica agrupada y distribuciones de 2015 y 2026 ponderadas por trabajadores agrícolas del Censo 2013" data-swap-label="Trabajadores agrícolas">
+            <img src="figures/figure-4b-distribucion-agricultura.png" alt="Vista previa de la distribución ponderada para trabajadores agrícolas" loading="lazy">
+            <span>Trabajadores agrícolas</span>
+          </button>
+        </div>
+        </div>
         <div class="caption">
           <p><em>Nota.</em> La Figura 3 ubica, para cada departamento, la media, mediana y media ± 1 DE descriptivas, además de la lluvia de 2015 (triángulo azul) y 2026 (círculo rojo). En la Figura 4, las líneas continuas son CDF de unidades ADM2 y las discontinuas son CDF ponderadas por personas agrícolas en grupos GEO2 de IPUMS 2013. La línea gris es sólo la referencia geográfica municipio–año; no se presenta una serie laboral histórica que sugiera cambios no observados en la composición ocupacional.</p>
           <p><strong>Fuentes.</strong> CHIRPS v3; Censo de Honduras 2013 mediante IPUMS International; evaluación rápida de Oxfam para el contraste sustantivo.</p>
         </div>
         <div class="download-row">
           <a href="downloads/figures/figure-4-distribuciones-acumuladas.pdf">Figura PDF</a>
+          <a href="downloads/figures/figure-4a-distribucion-adm2.pdf">Distribución ADM2 PDF</a>
+          <a href="downloads/figures/figure-4b-distribucion-agricultura.pdf">Distribución agrícola PDF</a>
           <a href="figures/figure-4-distribuciones-acumuladas.png">PNG completo</a>
           <a href="data/cdf_curves_2015_2026.csv" download>Curvas CSV</a>
+          <a href="data/distribution_density_curves.csv" download>Densidades CSV</a>
+          <a href="data/distribution_density_inputs.csv" download>Insumos de densidad</a>
           <a href="data/oxfam_department_summary_2026.csv" download>Oxfam agregado</a>
         </div>
       </div>

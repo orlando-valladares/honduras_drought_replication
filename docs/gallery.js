@@ -43,6 +43,34 @@
     trigger.addEventListener("click", () => openLightbox(trigger));
   });
 
+  document.querySelectorAll("[data-swap-gallery]").forEach((gallery) => {
+    const main = gallery.querySelector("[data-swap-main]");
+    const mainImage = main.querySelector("img");
+    const mainLabel = gallery.querySelector("[data-swap-main-label]");
+    gallery.querySelectorAll("[data-swap-thumb]").forEach((thumbnail) => {
+      thumbnail.addEventListener("click", () => {
+        const thumbnailImage = thumbnail.querySelector("img");
+        const previous = {
+          image: main.dataset.image,
+          alt: main.dataset.alt,
+          label: main.dataset.label,
+        };
+        main.dataset.image = thumbnail.dataset.swapImage;
+        main.dataset.alt = thumbnail.dataset.swapAlt;
+        main.dataset.label = thumbnail.dataset.swapLabel;
+        mainImage.src = thumbnail.dataset.swapImage;
+        mainImage.alt = thumbnail.dataset.swapAlt;
+        mainLabel.textContent = thumbnail.dataset.swapLabel;
+        thumbnail.dataset.swapImage = previous.image;
+        thumbnail.dataset.swapAlt = previous.alt;
+        thumbnail.dataset.swapLabel = previous.label;
+        thumbnailImage.src = previous.image;
+        thumbnailImage.alt = previous.alt;
+        thumbnail.querySelector("span").textContent = previous.label;
+      });
+    });
+  });
+
   previousButton.addEventListener("click", () => goToSection(activeSection - 1));
   nextButton.addEventListener("click", () => goToSection(activeSection + 1));
   closeButton.addEventListener("click", () => lightbox.close());

@@ -12,6 +12,8 @@ Este directorio contiene únicamente datos analíticos agregados o climáticos d
 | `derived/department_rainfall_z_1981_2026.csv` | 828 | departamento–año | 1981–2026 | Figura 3 y Tabla A3 |
 | `derived/department_historical_comparison.csv` | 18 | departamento | 2015, 2026 y referencia | Figura 3 |
 | `derived/cdf_curves_2015_2026.csv` | 14.209 | punto de curva | 2015, 2026 y referencia | Figura 4 |
+| `derived/distribution_density_inputs.csv` | 19.412 | ADM2–año o GEO2–año | 1981–2026 | Insumos agregados de las vistas alternativas de Figura 4 |
+| `derived/distribution_density_curves.csv` | 2.526 | punto de curva | 2015, 2026 y referencia agrupada | Densidades alternativas de Figura 4 |
 | `derived/geo2_exposure_2015_2026.csv` | 250 | GEO2–año | 2015, 2026 | Figuras 2 y 4 |
 | `derived/geo2_priority_2026.csv` | 125 | GEO2 | 2026 con población fija de 2013 | Figura A1 |
 | `derived/department_priority_2026.csv` | 18 | departamento | 2026 con población fija de 2013 | Figura 5 |

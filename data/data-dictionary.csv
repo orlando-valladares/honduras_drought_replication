@@ -90,3 +90,9 @@ oxfam_department_summary_2026,loss_le_25_households_pct,Participación de pérdi
 oxfam_department_summary_2026,loss_25_50_households_pct,Participación de pérdida 25-50%,Porcentaje,Departamento,2026,Oxfam,100 por banda/total,Vacio no permitido
 oxfam_department_summary_2026,loss_50_75_households_pct,Participación de pérdida 50-75%,Porcentaje,Departamento,2026,Oxfam,100 por banda/total,Vacio no permitido
 oxfam_department_summary_2026,loss_75_100_households_pct,Participación de pérdida 75-100%,Porcentaje,Departamento,2026,Oxfam,100 por banda/total,Vacio no permitido
+distribution_density_inputs,population,Población representada,Texto,ADM2-año o GEO2-año,1981-2026,CHIRPS v3 y Censo 2013,Clasificación analítica,Vacio no permitido
+distribution_density_inputs,year,Año,Año,ADM2-año o GEO2-año,1981-2026,CHIRPS v3,Sin transformación,Vacio no permitido
+distribution_density_inputs,z_loo,Puntaje de lluvia leave-one-out,Desviaciones estándar,ADM2-año o GEO2-año,1981-2026,CHIRPS v3,Estandarización local,Vacio no permitido
+distribution_density_inputs,weight,Peso analítico,Unidad o personas,ADM2-año o GEO2-año,1981-2026,CHIRPS v3 o Censo 2013,Uno para ADM2 y trabajadores agrícolas fijos para GEO2,Vacio no permitido
+distribution_density_inputs,series,Serie gráfica,Texto,ADM2-año o GEO2-año,1981-2026,Datos derivados,2015 2026 o referencia agrupada,Vacio no permitido
+distribution_density_curves,density,Densidad kernel ponderada,Densidad,Punto de curva,2015 2026 o referencia agrupada,Datos derivados,Kernel gaussiano con ancho de banda de Silverman ponderado,Vacio no permitido
